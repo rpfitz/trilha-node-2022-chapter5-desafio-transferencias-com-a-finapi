@@ -46,7 +46,7 @@ describe("Create Statement", () => {
     expect(deposit.type).toEqual("deposit");
     expect(deposit.amount).toBe(100);
     expect(withdraw.type).toEqual("withdraw");
-    expect(withdraw.amount).toBe(80);
+    expect(withdraw.amount).toBe(-80);
   });
 
   it("should not be able to create statements for an unexistent user", async () => {

@@ -1,7 +1,8 @@
 import request from "supertest";
 import { Connection } from "typeorm";
 import { app } from "../../../../app";
-import createConnection from "../../../../database";
+// import createConnection from "../../../../database";
+import { createConnection } from 'typeorm';
 
 let connection: Connection;
 let token: string;
